@@ -1,2 +1,0 @@
-# warcon
-Warwick Congress Website
