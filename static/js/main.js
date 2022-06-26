@@ -1,5 +1,8 @@
 
 // Scroll handler
+
+// THIS IS HORRENDOUS CODE - TIDY IT UP NEIL
+// stick to either jQuery or JS, be consistent
 let container = document.querySelector('.container');
 container.addEventListener('scroll', function() {
 
@@ -18,6 +21,9 @@ container.addEventListener('scroll', function() {
         navLinks[i].classList.toggle('dark', container.scrollTop > 0 && $('#contact').offset().top != 0);
     }
 
+    // DOESN'T WORK
+    title.classList.add('hide');
+
     // Change title based on current section
     if ($('#about').offset().top == 0) {
         title.innerHTML = "About";
@@ -31,6 +37,6 @@ container.addEventListener('scroll', function() {
         title.innerHTML = " ";
     }
 
-    // Change page titles accordingly
-    // console.log("Height of contact us: " + $('#contact').offset().top)
+    // DOESN'T WORK
+    title.classList.remove('hide');
 })

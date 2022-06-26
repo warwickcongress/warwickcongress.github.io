@@ -33,8 +33,8 @@ nav .navbar .header {
 }
 
 nav .navbar .header #warcon-logo {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     display: block;
 }
 
@@ -42,6 +42,9 @@ nav .navbar .header .page-title {
     padding: 0 15px;
     font-size: 2.2rem;
     font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.5s;
+    
 }
 
 nav .navbar .menu {
@@ -139,4 +142,15 @@ h1 {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+#copyright {
+    color: #fff;
+    position: absolute;
+    bottom: 0.5vh;
+    left: 0.5vh;
+}
+
+.hide {
+    opacity: 0 !important;
 }
