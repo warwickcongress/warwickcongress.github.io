@@ -1,0 +1,39 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#home {
+    background: grey;
+    color: #fff;
+}
+
+#about {
+    background: #fff;
+}
+
+#conferences {
+    background: grey;
+}
+
+#team {
+    background: #fff;
+}
+
+#contact {
+    background: grey;
+}
