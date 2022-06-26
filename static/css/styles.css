@@ -6,20 +6,73 @@
     font-weight: 500;
 }
 
+.page-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.page-header #warcon-logo {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    /* color: inherit; */
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#join-btn {
+    margin-top: 15px;
+    padding: 5px;
+    width: 80px;
+    color: #000;
+    mix-blend-mode: screen;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Sections */
+
 .container {
     height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
-section {
-    height: 100vh;
+.container section {
+    height: 100%;
     scroll-snap-align: start;
+    display: flex;
+    padding: 60px;
 }
 
+
 #home {
-    background: grey;
+    background-image: url("../img/zigzag.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
+    align-items: center;
 }
 
 #about {
@@ -36,4 +89,16 @@ section {
 
 #contact {
     background: grey;
+}
+
+
+/* Text */
+
+h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
