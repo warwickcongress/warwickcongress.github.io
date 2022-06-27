@@ -1,3 +1,9 @@
+:root {
+    --dark-grey: #363636;
+    --light-grey: #eee;
+}
+
+
 * { 
     margin: 0;
     padding: 0;
@@ -32,10 +38,19 @@ nav .navbar .header {
     justify-content: space-between;
 }
 
-nav .navbar .header #warcon-logo {
+nav .navbar .header .logo {
+    position: relative;
+}
+
+nav .navbar .header .logo img {
     width: 60px;
     height: 60px;
     display: block;
+    transition: opacity 0.5s;
+}
+
+nav .navbar .header #logo-dark {
+    position: absolute; top: 0; right: 0;
 }
 
 nav .navbar .header .page-title {
@@ -44,7 +59,6 @@ nav .navbar .header .page-title {
     font-weight: 600;
     opacity: 1;
     transition: opacity 0.5s;
-    
 }
 
 nav .navbar .menu {
@@ -62,6 +76,7 @@ nav .navbar li {
 nav .navbar .nav-link {
     font-weight: 400;
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 
@@ -100,7 +115,7 @@ nav .navbar .nav-link {
     background: #eee;
 }
 
-/* Section Team */
+/* Team section */
 
 #team {
     min-height: 100vh;
@@ -116,7 +131,7 @@ nav .navbar .nav-link {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(234, 232, 232);
+    background: var(--light-grey);
     clip-path: inset(47% 0 0 0);
     z-index: -1;
 }
@@ -147,7 +162,7 @@ nav .navbar .nav-link {
 }
 
 .main-card .cards .card {
-    background: rgb(234, 232, 232);
+    background: var(--light-grey);
     width: calc(100% / 7 - 10px);
     padding: 50px;
     border-radius: 12px;
@@ -172,7 +187,7 @@ nav .navbar .nav-link {
     height: 150px;
     width: 150px;
     margin-bottom: 14px;
-    background: #363636;
+    background: var(--dark-grey);
     border-radius: 15%;
     padding: 3px;
 }
@@ -189,11 +204,12 @@ nav .navbar .nav-link {
 .card .content .details .name {
     font-size: 20px;
     font-weight: 500;
+    color: var(--dark-grey);
 }
 
 .card .content .details .job {
     font-size: 15px;
-    color: #363636;
+    color: var(--dark-grey);
 }
 
 .card .content .media-icons {
@@ -206,7 +222,7 @@ nav .navbar .nav-link {
     width: 35px;
     font-size: 14px;
     color: #fff;
-    background: #363636;
+    background: var(--dark-grey);
     margin: 0 4px;
     border-radius: 15%;
     text-align: center;
@@ -216,8 +232,8 @@ nav .navbar .nav-link {
 }
 
 .content .media-icons a:hover {
-    border-color: #363636;
-    color: #363636;
+    border-color: var(--dark-grey);
+    color: var(--dark-grey);
     background: #fff;
 }
 
@@ -271,7 +287,7 @@ input[type="radio"] {
         height: 100px;
         width: 100px;
         margin-bottom: 14px;
-        background: #363636;
+        background: var(--dark-grey);
     }
 
     .card .content .img img {
@@ -282,7 +298,6 @@ input[type="radio"] {
     }
     
 }
-
 
 #contact {
     background: #161616;
@@ -305,7 +320,7 @@ h1 {
 }
 
 .dark {
-    color: #363636;
+    color: var(--dark-grey);
 }
 
 
@@ -331,6 +346,14 @@ h1 {
     left: 0.5vh;
 }
 
-.hide {
+.hidden {
     opacity: 0 !important;
+}
+
+
+.test {
+    height: 30%;
+    background: var(--light-grey);
+    min-width: calc(100% + 120px);
+    margin: -60px;
 }
