@@ -100,9 +100,188 @@ nav .navbar .nav-link {
     background: #eee;
 }
 
+/* Section Team */
+
 #team {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#team::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(234, 232, 232);
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+
+.team-container {
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.team-container .main-card {
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+}
+
+#two:checked ~ .main-card {
+    margin-left: -100%;
+}
+
+.main-card .cards {
+    width: calc(100%);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+}
+
+.main-card .cards .card {
+    background: rgb(234, 232, 232);
+    width: calc(100% / 7 - 10px);
+    padding: 50px;
+    border-radius: 12px;
+    transition: all 1s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main-card .cards .card:hover {
+    transform: translateY(-10px);
+}
+ 
+.cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card .content .img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 14px;
+    background: #363636;
+    border-radius: 15%;
+    padding: 3px;
+}
+
+.card .content .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    background: #fff;
+    border: 3px solid #fff;
+}
+
+.card .content .details .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .content .details .job {
+    font-size: 15px;
+    color: #363636;
+}
+
+.card .content .media-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .content .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    color: #fff;
+    background: #363636;
+    margin: 0 4px;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 33px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.content .media-icons a:hover {
+    border-color: #363636;
+    color: #363636;
     background: #fff;
 }
+
+.button {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+#one:checked ~ .button label.one {
+    width: 35px;
+}
+
+#two:checked ~ .button label.two {
+    width: 35px;
+}
+
+#two:checked ~ .button label.one {
+    width: 15px;
+}
+
+#one:checked ~ .button label.two {
+    width: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    .main-card .cards .card {
+        width: calc(100% / 6 - 10px);
+        margin: 10px 0 10px 0;
+    }
+
+    .cards .card .content .img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 14px;
+        background: #363636;
+    }
+
+    .card .content .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background: #fff;
+    }
+    
+}
+
 
 #contact {
     background: #161616;
