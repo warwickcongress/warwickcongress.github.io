@@ -12,14 +12,12 @@ container.addEventListener('scroll', function() {
     // Alter styling of header
     if ((about.getBoundingClientRect().top <= 0) && (contact.getBoundingClientRect().top != 0)) {
         logoDark.classList.remove('hidden');
-        title.classList.add('dark');
         title.classList.remove('hidden');
         for (i = 0; i < navlinks.length; i++)
             navlinks[i].classList.add('dark');
     } else {
         logoDark.classList.add('hidden');
         title.classList.add('hidden');
-        title.classList.remove('dark');
         for (i = 0; i < navlinks.length; i++)
             navlinks[i].classList.remove('dark');
     }
