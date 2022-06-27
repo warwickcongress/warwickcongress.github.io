@@ -40,7 +40,7 @@ nav .navbar .header #warcon-logo {
 
 nav .navbar .header .page-title {
     padding: 0 15px;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     opacity: 1;
     transition: opacity 0.5s;
@@ -234,6 +234,7 @@ nav .navbar .nav-link {
     margin: 0 4px;
     border-radius: 15px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .button label.active {
