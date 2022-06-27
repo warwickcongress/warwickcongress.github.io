@@ -4,7 +4,7 @@
 }
 
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,6 +22,7 @@ nav {
     left: 0;
     height: 60px;
     width: 100%;
+    z-index: 100;
 }
 
 nav .navbar {
@@ -50,10 +51,12 @@ nav .navbar .header .logo img {
 }
 
 nav .navbar .header #logo-dark {
-    position: absolute; top: 0; right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-nav .navbar .header .page-title {
+nav .navbar .header .title {
     padding: 0 15px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -92,19 +95,37 @@ nav .navbar .nav-link {
 
 .container section {
     height: 100%;
-    scroll-snap-align: start;
     display: flex;
-    padding: 60px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    scroll-snap-align: start;
 }
 
+.page-title {
+    height: 30%;
+    padding-top: 100px;
+    min-width: 100%;
+}
+
+.page-content {
+    height: 70%;
+    min-width: 100%;
+}
 
 #home {
+    color: #fff;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
     background-image: url("../img/zigzag.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
-    align-items: center;
+}
+
+#home div {
+    padding: 60px;
 }
 
 #about {
@@ -300,7 +321,51 @@ input[type="radio"] {
 }
 
 #contact {
-    background: #161616;
+    background: #fff;
+}
+
+#contact .join-banner {
+    min-width: 100%;
+    height: 40%;
+    padding: 120px;
+    background-image: url("../img/conference.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#contact .page-content {
+    height: 60%;
+}
+
+#contact .page-content .subtitle {
+    margin: 20px;
+}
+
+#contact li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+#contact .social-link {
+    color: var(--dark-grey);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#contact .fa-brands {
+    transition: all 0.5s ease;
+}
+
+#contact #copyright {
+    color: var(--dark-grey);
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0.5vh;
+    left: 0.5vh;
+    transition: opacity 0.5s;
 }
 
 
@@ -308,6 +373,16 @@ input[type="radio"] {
 
 h1 {
     font-size: 3rem;
+}
+
+h2 {
+    color: var(--dark-grey);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 .subtitle {
@@ -326,34 +401,24 @@ h1 {
 
 /* Others */
 
-#join-btn {
+.hidden {
+    opacity: 0 !important;
+}
+
+.join-btn {
     margin-top: 15px;
     padding: 5px;
     width: 80px;
-    color: #000;
-    mix-blend-mode: screen;
+    color: var(--dark-grey);
     background: #fff;
     border-radius: 5px;
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-#copyright {
-    color: #fff;
-    position: absolute;
-    bottom: 0.5vh;
-    left: 0.5vh;
-}
-
-.hidden {
-    opacity: 0 !important;
-}
-
-
-.test {
-    height: 30%;
-    background: var(--light-grey);
-    min-width: calc(100% + 120px);
-    margin: -60px;
+.join-btn:hover,
+.fa-brands:hover {
+    transform: translateY(-5px);
 }
