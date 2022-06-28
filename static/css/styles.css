@@ -5,6 +5,7 @@
 
 
 * {
+    color: var(--dark-grey);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -103,12 +104,6 @@ nav .navbar .nav-link {
 }
 
 .page-title {
-    height: 30%;
-    padding-top: 100px;
-    min-width: 100%;
-}
-
-.page-title__team {
     height: 10%;
     padding-top: 100px;
     min-width: 100%;
@@ -117,10 +112,10 @@ nav .navbar .nav-link {
 .page-content {
     height: 70%;
     min-width: 100%;
+    position: relative;
 }
 
 #home {
-    color: #fff;
     align-items: center;
     justify-content: left;
     text-align: left;
@@ -134,74 +129,118 @@ nav .navbar .nav-link {
     padding: 60px;
 }
 
+
+/* About section */
+
 #about {
     background: #fff;
 }
+
+#about .about-container {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#about .about-container .column {
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+#about .about-icon {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about .about-icon i {
+    font-size: 5rem;
+    color: #666666;
+    /* text-shadow: 1px 1px 10px #666666; */
+}
+
+#about .about-description {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#about .about-description p {
+    font-weight: 400;
+}
+
+
+/* Conferences section */
 
 #conferences {
     background: #eee;
 }
 
-/* Conferences */
-
 .process-wrapper {
-	margin:auto;
-	max-width:1080px;
+	margin: auto;
+	max-width: 1080px;
 }
 
 #progress-bar-container {
-	position:relative;
-	width:90%;
-	height:100px;
-	margin-top:60px;
+    width: 90%;
+	height: 100px;
     margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
+	position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 #progress-bar-container ul {
-	padding:0;
-	margin:0;
-	padding-top:15px;
-	z-index:9999;
-	position:absolute;
-	width:100%;
-	margin-top:-40px
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+	z-index: 9999;
+	position: absolute;
+	width: 100%;
+	margin-top: -40px
 }
 
 #progress-bar-container li:before {
-	content:" ";
-	display:block;
-	margin:auto;
-	width:30px;
-	height:30px;
-	border-radius:50%;
-	border:solid 2px #aaa;
-	transition:all ease 0.3s;
-     
+	content: " ";
+	display: block;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: solid 2px #aaa;
+	transition: all ease 0.3s;
 }
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
-	border:solid 2px #fff;
+	border: solid 2px #fff;
 	background: var(--dark-grey); 
 }
 
 #progress-bar-container li {
-	list-style:none;
-	float:left;
-	width:20%;
-	text-align:center;
-	color:#aaa;
-	text-transform:uppercase;
-	font-size:11px;
-	cursor:pointer;
-	font-weight:700;
-	transition:all ease 0.2s;
-	vertical-align:bottom;
-	height:60px;
-	position:relative;
+	list-style: none;
+	float: left;
+	width: 20%;
+	text-align: center;
+	color: #aaa;
+	text-transform: uppercase;
+	font-size: 11px;
+	cursor: pointer;
+	font-weight: 700;
+	transition: all ease 0.2s;
+	vertical-align: bottom;
+	height: 60px;
+	position: relative;
 }
 
 #progress-bar-container li .step-inner {
@@ -304,7 +343,7 @@ nav .navbar .nav-link {
 
 @keyframes FadeInUp {
 	0% {
-		transform:translateY(15px);
+		transform:translateY(20px);
 		opacity:0;
 	}
 	
@@ -313,6 +352,7 @@ nav .navbar .nav-link {
 		opacity:1;
 	}
 }
+
 
 /* Team section */
 
@@ -420,13 +460,11 @@ nav .navbar .nav-link {
 
 .card .content .details .name {
     font-size: 20px;
-    font-weight: 500;
-    color: var(--dark-grey);
+    font-weight: 600;
 }
 
 .card .content .details .job {
     font-size: 15px;
-    color: var(--dark-grey);
 }
 
 .card .content .media-icons {
@@ -438,7 +476,6 @@ nav .navbar .nav-link {
     height: 35px;
     width: 35px;
     font-size: 14px;
-    color: #fff;
     background: var(--dark-grey);
     margin: 0 4px;
     border-radius: 15%;
@@ -549,6 +586,9 @@ input[type="radio"] {
     
 }
 
+
+/* Contact section */
+
 #contact {
     background: #fff;
 }
@@ -562,7 +602,6 @@ input[type="radio"] {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
 }
 
 #contact .join-banner-text {
@@ -590,7 +629,7 @@ input[type="radio"] {
 }
 
 #contact .page-content .subtitle {
-    margin: 20px;
+    margin: 10px;
 }
 
 #contact li {
@@ -625,6 +664,16 @@ h1 {
     font-size: 3rem;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
 h2 {
     color: var(--dark-grey);
     font-size: 2rem;
@@ -635,9 +684,16 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .subtitle {
     font-size: 1.2rem;
     font-weight: 300;
+    margin-top: 5px;
 }
 
 .white {
@@ -659,7 +715,6 @@ h3 {
     margin-top: 15px;
     padding: 5px;
     width: 80px;
-    color: var(--dark-grey);
     background: #fff;
     border-radius: 5px;
     border: none;
