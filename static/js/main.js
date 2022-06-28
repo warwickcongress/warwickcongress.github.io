@@ -29,3 +29,25 @@ container.addEventListener('scroll', function() {
         copyright.classList.add('hidden');
     }
 })
+
+$(document).ready(function(){
+    $(".step").click( function() {
+        $(this).addClass("active").prevAll().addClass("active");
+        $(this).nextAll().removeClass("active");
+    });
+
+    $(".step01").click( function() {
+        $("#line-progress").css("width", "3%");
+        $(".discovery").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step02").click( function() {
+        $("#line-progress").css("width", "25%");
+        $(".strategy").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step03").click( function() {
+        $("#line-progress").css("width", "50%");
+        $(".creative").addClass("active").siblings().removeClass("active");
+    });
+});
