@@ -38,16 +38,26 @@ $(document).ready(function(){
 
     $(".step01").click( function() {
         $("#line-progress").css("width", "3%");
-        $(".discovery").addClass("active").siblings().removeClass("active");
+        $(".2022").addClass("active").siblings().removeClass("active");
     });
 
     $(".step02").click( function() {
         $("#line-progress").css("width", "25%");
-        $(".strategy").addClass("active").siblings().removeClass("active");
+        $(".2021").addClass("active").siblings().removeClass("active");
     });
 
     $(".step03").click( function() {
         $("#line-progress").css("width", "50%");
-        $(".creative").addClass("active").siblings().removeClass("active");
+        $(".2020").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step04").click( function() {
+        $("#line-progress").css("width", "75%");
+        $(".2019").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step05").click( function() {
+        $("#line-progress").css("width", "100%");
+        $(".2018").addClass("active").siblings().removeClass("active");
     });
 });
