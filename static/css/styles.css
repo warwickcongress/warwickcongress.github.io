@@ -164,7 +164,7 @@ nav .navbar .nav-link {
 #about .about-icon i {
     font-size: 5rem;
     color: #666666;
-    /* text-shadow: 1px 1px 10px #666666; */
+    text-shadow: 1px 1px 5px #888888;
 }
 
 #about .about-description {
@@ -650,7 +650,7 @@ input[type="radio"] {
     text-decoration: none;
 }
 
-#contact .fa-brands {
+#contact .social-link i {
     transition: all 0.5s ease;
 }
 
@@ -730,6 +730,6 @@ h4 {
 }
 
 .join-btn:hover,
-.fa-brands:hover {
+.social-link i:hover {
     transform: translateY(-5px);
 }

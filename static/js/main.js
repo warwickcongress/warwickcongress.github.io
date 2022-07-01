@@ -30,6 +30,7 @@ container.addEventListener('scroll', function() {
     }
 })
 
+// Progress bar in conferences section
 $(document).ready(function(){
     $(".step").click( function() {
         $(this).addClass("active").prevAll().addClass("active");
@@ -37,27 +38,32 @@ $(document).ready(function(){
     });
 
     $(".step01").click( function() {
-        $("#line-progress").css("width", "3%");
+        $("#line-progress").css("width", "16%");
         $(".2022").addClass("active").siblings().removeClass("active");
     });
 
     $(".step02").click( function() {
-        $("#line-progress").css("width", "25%");
+        $("#line-progress").css("width", "32%");
         $(".2021").addClass("active").siblings().removeClass("active");
     });
 
     $(".step03").click( function() {
-        $("#line-progress").css("width", "50%");
+        $("#line-progress").css("width", "48%");
         $(".2020").addClass("active").siblings().removeClass("active");
     });
 
     $(".step04").click( function() {
-        $("#line-progress").css("width", "75%");
+        $("#line-progress").css("width", "64%");
         $(".2019").addClass("active").siblings().removeClass("active");
     });
 
     $(".step05").click( function() {
-        $("#line-progress").css("width", "100%");
+        $("#line-progress").css("width", "80%");
         $(".2018").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step06").click( function() {
+        $("#line-progress").css("width", "100%");
+        $(".2017").addClass("active").siblings().removeClass("active");
     });
 });
