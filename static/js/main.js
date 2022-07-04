@@ -31,6 +31,7 @@ container.addEventListener('scroll', function() {
 })
 
 // Progress bar in conferences section
+/*
 $(document).ready(function(){
     $(".step").click( function() {
         $(this).addClass("active").prevAll().addClass("active");
@@ -67,3 +68,4 @@ $(document).ready(function(){
         $(".2017").addClass("active").siblings().removeClass("active");
     });
 });
+*/
