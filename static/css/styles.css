@@ -664,7 +664,7 @@ h4 {
 
 /* Accordions */
 
-.accordion-panel {
+/* .accordion-panel {
     max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease-out;
@@ -681,4 +681,4 @@ h4 {
     align-items: center;
     text-decoration: none;
     transition: all 0.3s ease;
-}
+} */
