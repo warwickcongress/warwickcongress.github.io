@@ -186,9 +186,7 @@ nav .navbar .nav-link {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    color: rgb(180, 135, 196);
-    background-color: #2d1f66;
-    background-image: linear-gradient(315deg, #2d1f66 0%, #0f0218, 94%);
+    background-color: var(--light-grey);;
 }
 
 .conf-container {
@@ -271,10 +269,6 @@ nav .navbar .nav-link {
 .conf-content {
     width: calc(50% - 2rem);
     color: white;
-}
-
-.conf-content h2, .conf-content p, .conf-container h1, .conf-container p, .conf-title h2, .conf-title p {
-    color: rgb(197, 168, 205);
 }
 
 .show-me:nth-child(n) {
@@ -559,7 +553,7 @@ input[type="radio"] {
 
 #contact .page-content {
     height: 55%;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 #contact .page-content .subtitle {
