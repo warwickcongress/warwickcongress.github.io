@@ -25,7 +25,6 @@ function scrollHandler(e) {
   const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
 
   const dist = targetY - timelineRect.top;
-  console.log(dist);
 
   if (down && !full) {
     set = Math.max(set, dist);
@@ -38,13 +37,12 @@ function scrollHandler(e) {
   }
 
   sections.forEach(item => {
-    // console.log(item);
-    const rect = item.getBoundingClientRect(); //     console.log(rect);
+    const rect = item.getBoundingClientRect()
 
     if (rect.top + item.offsetHeight / 5 < targetY) {
       item.classList.add('show-me');
     }
-  }); // console.log(up, down);
+  });
 
   prevScrollY = window.scrollY;
 }
