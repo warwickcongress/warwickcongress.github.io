@@ -91,7 +91,8 @@ nav .navbar .nav-link {
     width: 100vw;
     max-width: 100%;
     scroll-snap-type: y mandatory;
-    overflow-y: visible;
+    /* overflow-y: visible; */
+    overflow-y: scroll;
 }
 
 .container section {
