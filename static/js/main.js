@@ -30,6 +30,16 @@ container.addEventListener('scroll', function() {
     }
 })
 
+// Show/hide nav menu
+function toggleAccordion() {
+    var panel = document.getElementsByClassName('accordion-panel')[0];
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+}
+
 // Progress bar in conferences section
 /*
 $(document).ready(function(){

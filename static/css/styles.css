@@ -30,7 +30,7 @@ nav .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 10px;
 }
 
@@ -655,4 +655,30 @@ h4 {
 .join-btn:hover,
 .social-link i:hover {
     transform: translateY(-5px);
+}
+
+
+
+
+
+
+/* Accordions */
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+}
+
+.link {
+    color: var(--my-grey);
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
