@@ -15,64 +15,77 @@
 }
 
 
-/* Navbar/header */
+/* WarCon logo */
 
-nav {
+.logo {
     position: fixed;
     top: 0;
     left: 0;
-    height: 60px;
-    width: 100%;
+    margin: 10px;
     z-index: 100;
 }
 
-nav .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 95%;
-    margin: 10px;
-}
-
-nav .navbar .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav .navbar .header .logo {
-    position: relative;
-}
-
-nav .navbar .header .logo img {
+.logo img {
     width: 60px;
     height: 60px;
     display: block;
     transition: opacity 0.5s;
 }
 
-nav .navbar .header #logo-dark {
+#logo-dark {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-nav .navbar .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
- 
-nav .navbar li {
-    list-style: none;
-    margin: 0 15px;
+
+/* Navigation menu */
+
+#nav-menu {
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    z-index: 100;
 }
 
-nav .navbar .nav-link {
+#nav-dropdown {
+    max-height: 0;
+    min-width: 160px;
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+    float: right;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link {
+    font-size: 1rem;
     font-weight: 400;
+    background: var(--light-grey);
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    float: right;
+    border: none;
+    border-radius: 20px;
     text-decoration: none;
-    transition: color 0.5s;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link[type="button"] {
+    margin-top: 0;
+}
+
+.nav-link:hover {
+    color: inherit;
+    background: #ccc;
+}
+
+.active {
+    color: #fff;
+    background: var(--dark-grey);
 }
 
 
@@ -99,6 +112,8 @@ nav .navbar .nav-link {
     height: 10%;
     min-width: 100%;
     padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .page-content {
@@ -173,6 +188,9 @@ nav .navbar .nav-link {
 
 /* Conferences section */
 
+/* #conferences {
+    background: var(--light-grey);
+} */
 
 
 
@@ -624,30 +642,4 @@ h4 {
 .join-btn:hover,
 .social-link i:hover {
     transform: translateY(-5px);
-}
-
-
-
-
-
-
-/* Navigation menu */
-
-#nav-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.2s ease-out;
-}
-
-.link {
-    color: var(--my-grey);
-    background: #fff;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
 }
