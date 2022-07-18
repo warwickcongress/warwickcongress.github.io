@@ -57,14 +57,6 @@ nav .navbar .header #logo-dark {
     right: 0;
 }
 
-nav .navbar .header .title {
-    padding: 0 15px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
 nav .navbar .menu {
     display: flex;
     align-items: center;

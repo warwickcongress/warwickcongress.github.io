@@ -1,24 +1,20 @@
 
 var container = document.querySelector('.container');
-var title     = document.querySelector('.title');
 var logoDark  = document.querySelector("#logo-dark");
 var navlinks  = document.querySelectorAll(".nav-link");
 var about     = document.querySelector('#about')
 var contact   = document.querySelector('#contact')
 var copyright = document.querySelector('#copyright')
 
-// Change styling of logo, header and copyright on scroll
+// Change styling of logo and copyright
 container.addEventListener('scroll', function() {
 
-    // Alter styling of header
     if ((about.getBoundingClientRect().top <= 0) && (contact.getBoundingClientRect().top != 0)) {
         logoDark.classList.remove('hidden');
-        title.classList.remove('hidden');
         for (i = 0; i < navlinks.length; i++)
             navlinks[i].classList.add('dark');
     } else {
         logoDark.classList.add('hidden');
-        title.classList.add('hidden');
         for (i = 0; i < navlinks.length; i++)
             navlinks[i].classList.remove('dark');
     }
