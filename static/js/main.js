@@ -26,7 +26,7 @@ document.querySelector('.container').addEventListener('scroll', function() {
 
     // Enable styling for active nav link
     if (aboutPage.getBoundingClientRect().top > 0) {
-        document.querySelector("a[href='#home']").classList.add('active');
+        document.querySelector("#home-btn").classList.add('active');
     } else if ((aboutPage.getBoundingClientRect().top <= 0) && (confPage.getBoundingClientRect().top > 0)) {
         document.querySelector("a[href='#about']").classList.add('active');
     } else if ((confPage.getBoundingClientRect().top <= 0) && (teamPage.getBoundingClientRect().top > 0)) {
@@ -55,3 +55,34 @@ for (i = 0; i < navLinks.length; i++) {
         }
     });
 }
+
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
