@@ -1,4 +1,5 @@
 :root {
+    --warcon-purple: #181b55;
     --dark-grey: #363636;
     --light-grey: #eee;
 }
@@ -85,7 +86,7 @@
 
 .active {
     color: #fff;
-    background: var(--dark-grey);
+    background: var(--warcon-purple);
 }
 
 
@@ -170,7 +171,7 @@
 
 #about .about-icon i {
     font-size: 10vh;
-    color: #666666;
+    color: var(--warcon-purple);
     text-shadow: 1px 1px 5px #888888;
 }
 
@@ -499,8 +500,8 @@ input[type="radio"] {
 }
 
 #contact .banner-overlay {
-    background: #030215;
-    opacity: 0.7;
+    background: var(--warcon-purple);
+    opacity: 0.75;
     min-width: 100%;
     height: 100%;
     position: absolute;
@@ -523,8 +524,7 @@ input[type="radio"] {
     margin: 10px;
 }
 
-#contact .social-link {
-    color: var(--dark-grey);
+#contact .social-link i {
     font-size: 2rem;
     text-decoration: none;
 }
