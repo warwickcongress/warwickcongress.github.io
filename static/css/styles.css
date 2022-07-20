@@ -357,79 +357,28 @@
     cursor: pointer;
 }
 
-.button label.active {
-    width: 35px;
-}
-
-#one:checked ~ .button label.one {
-    width: 35px;
-}
-
-#two:checked ~ .button label.two {
-    width: 35px;
-}
-
-#three:checked ~ .button label.three {
-    width: 35px;
-}
-
-#four:checked ~ .button label.four {
-    width: 35px;
-}
-
-#five:checked ~ .button label.five {
-    width: 35px;
-}
-
-#six:checked ~ .button label.six {
-    width: 35px;
-}
-
-#seven:checked ~ .button label.seven {
-    width: 35px;
-}
-
-#eight:checked ~ .button label.eight {
-    width: 35px;
-}
-
+.button label.active,
+#one:checked ~ .button label.one,
+#two:checked ~ .button label.two,
+#three:checked ~ .button label.three,
+#four:checked ~ .button label.four,
+#five:checked ~ .button label.five,
+#six:checked ~ .button label.six,
+#seven:checked ~ .button label.seven,
+#eight:checked ~ .button label.eight,
 #nine:checked ~ .button label.nine {
     width: 35px;
 }
 
+#one:checked ~ .button label.two,
+#two:checked ~ .button label.one,
+#three:checked ~ .button label.two, .button label.one,
+#four:checked ~ .button label.three,
+#five:checked ~ .button label.four,
+#six:checked ~ .button label.five,
+#seven:checked ~ .button label.six,
+#eight:checked ~ .button label.seven,
 #nine:checked ~ .button label.eight {
-    width: 15px;
-}
-
-#eight:checked ~ .button label.seven {
-    width: 15px;
-}
-
-#seven:checked ~ .button label.six {
-    width: 15px;
-}
-
-#six:checked ~ .button label.five {
-    width: 15px;
-}
-
-#five:checked ~ .button label.four {
-    width: 15px;
-}
-
-#four:checked ~ .button label.three {
-    width: 15px;
-}
-
-#three:checked ~ .button label.two, .button label.one {
-    width: 15px;
-}
-
-#two:checked ~ .button label.one {
-    width: 15px;
-}
-
-#one:checked ~ .button label.two {
     width: 15px;
 }
 
