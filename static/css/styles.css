@@ -111,7 +111,7 @@
 .page-title {
     height: 10%;
     min-width: 100%;
-    padding-top: 100px;
+    padding-top: 12vh;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -146,6 +146,7 @@
 #about .about-container {
     height: 80%;
     width: 80%;
+    padding-top: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -153,9 +154,8 @@
     overflow: hidden;
 }
 
-#about .about-container .column {
+#about .column {
     float: left;
-    height: 100%;
     width: 20%;
 }
 
@@ -169,7 +169,7 @@
 }
 
 #about .about-icon i {
-    font-size: 5rem;
+    font-size: 10vh;
     color: #666666;
     text-shadow: 1px 1px 5px #888888;
 }
@@ -183,6 +183,26 @@
 
 #about .about-description p {
     font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #about .column {
+        width: 100%;
+    }
+
+    #about .about-icon i {
+        font-size: 3rem;
+    }
+
+    #about h4 {
+        font-size: 1rem;
+    }
+
+    #about .about-description p {
+        font-size: 0.85rem;
+    }
+
 }
 
 
