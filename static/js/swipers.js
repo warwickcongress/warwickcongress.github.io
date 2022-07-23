@@ -56,6 +56,10 @@ const teamSwiper = new Swiper('.team-swiper', {
     grabCursor: 'true',
     spaceBetween: 25,
     slidesPerView: 4,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //   },
   
     pagination: {
         el: '.swiper-pagination',
