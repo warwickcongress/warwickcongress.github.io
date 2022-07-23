@@ -373,10 +373,6 @@
     padding-top: 40px;
 }
 
-#contact .page-content .subtitle {
-    margin: 10px;
-}
-
 #contact li {
     list-style: none;
     display: inline;
@@ -391,6 +387,11 @@
 #contact .social-link i {
     transition: all 0.5s ease;
 }
+
+#contact .social-link i:hover {
+    transform: translateY(-5px);
+}
+
 
 #contact #copyright {
     color: var(--dark-grey);
@@ -426,6 +427,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
 h4 {
@@ -467,7 +469,6 @@ h4 {
     transition: all 0.5s ease;
 }
 
-.join-btn:hover,
-.social-link i:hover {
-    transform: translateY(-5px);
+.join-btn:hover {
+    background: #ccc;
 }
