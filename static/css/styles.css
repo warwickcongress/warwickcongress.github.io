@@ -89,12 +89,6 @@
     background: var(--warcon-purple);
 }
 
-@media only screen and (max-width: 768px) {
-    .nav-link {
-        margin-right: 10px;
-    }
-
-}
 
 /* Swipers */
 
@@ -206,7 +200,7 @@
 }
 
 #conferences .swiper-slide .content {
-    padding: 200px;
+    padding: 120px;
 }
 
 
@@ -429,4 +423,25 @@ h4 {
 
 .join-btn:hover {
     background: #ccc;
+}
+
+
+/* Mobile layout */
+@media only screen and (max-width: 768px) {
+    
+    .nav-link {
+        margin-right: 10px;
+    }
+
+    #conferences .swiper-button-prev {
+        margin-left: -10px;
+    }
+    
+    #conferences .swiper-button-next {
+        margin-right: -10px;
+    }
+
+    #conferences .swiper-slide .content {
+        padding: 40px !important
+    }
 }
