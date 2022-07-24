@@ -363,10 +363,6 @@
     transform: translateY(-5px);
 }
 
-#contact p {
-    font-weight: 300;
-}
-
 
 /* Text */
 
@@ -383,6 +379,7 @@ h2 {
 
 h3 {
     font-size: 1.4rem;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
