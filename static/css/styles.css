@@ -369,17 +369,6 @@
     transform: translateY(-5px);
 }
 
-#contact #copyright {
-    color: var(--dark-grey);
-    position: absolute;
-    margin-left: 10px;
-    bottom: 0.5vh;
-    left: 0.5vh;
-    transition: opacity 0.5s;
-    text-align: center;
-    width: 98%;
-}
-
 
 /* Text */
 
