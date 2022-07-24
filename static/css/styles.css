@@ -97,10 +97,21 @@
     width: 80%;
 }
 
-.swiper-slide {
+#conferences .swiper-slide,
+#team .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiper-pagination-bullet-active {
+    background: var(--warcon-purple);
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: var(--warcon-purple);
 }
 
 
@@ -154,33 +165,8 @@
 
 /* About section */
 
-#about {
-    background: #fff;
-}
-
-#about .about-container {
-    height: 80%;
-    width: 80%;
-    padding-top: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-}
-
-#about .column {
-    float: left;
-    width: 20%;
-}
-
-#about .about-icon {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+#about .swiper {
+    padding-top: 60px;
 }
 
 #about .about-icon i {
@@ -200,40 +186,18 @@
     font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
-    
-    #about .column {
-        width: 100%;
-    }
-
-    #about .about-icon i {
-        font-size: 3rem;
-    }
-
-    #about h4 {
-        font-size: 1rem;
-    }
-
-    #about .about-description p {
-        font-size: 0.85rem;
-    }
-
-}
-
 
 /* Conferences section */
 
-#conferences {
-}
-
 #conferences .page-content {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #conferences .swiper-slide .content {
-    padding: 200px;
+    padding: 80px;
 }
 
 
@@ -249,7 +213,7 @@
     height: 100vh;
     width: 100%;
     background: var(--light-grey);
-    clip-path: inset(49% 0 0 0);
+    clip-path: inset(50% 0 0 0);
     z-index: -1;
 }
 
@@ -265,7 +229,8 @@
 
 #team .swiper-slide {
     background: var(--light-grey);
-    padding: 50px;
+    height: 90%;
+    padding: 30px;
     border-radius: 15px;
     transition: all 1s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -283,8 +248,8 @@
 }
 
 #team .swiper-slide .content .img {
-    height: 150px;
-    width: 150px;
+    height: 190px;
+    width: 190px;
     margin-bottom: 14px;
     padding: 3px;
     background: var(--dark-grey);
@@ -305,7 +270,7 @@
 }
 
 #team .swiper-slide .role {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 #team .swiper-slide .media-icons {
@@ -316,7 +281,7 @@
 #team .swiper-slide .media-icons a {
     height: 35px;
     width: 35px;
-    font-size: 14px;
+    font-size: 1rem;
     background: var(--dark-grey);
     margin: 0 4px;
     border-radius: 15%;
@@ -327,9 +292,7 @@
 }
 
 #team .swiper-slide .media-icons a:hover {
-    border-color: var(--dark-grey);
-    color: var(--dark-grey);
-    background: rgb(163, 163, 163);
+    background: #222;
     transform: translateY(-5px);
 }
 
@@ -359,7 +322,7 @@
 }
 
 #contact .banner-overlay {
-    background: var(--warcon-purple);
+    background: #002;
     opacity: 0.75;
     min-width: 100%;
     height: 100%;
@@ -380,6 +343,7 @@
 }
 
 #contact .social-link i {
+    margin-top: 15px;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -389,6 +353,7 @@
 }
 
 #contact .social-link i:hover {
+    color: #222;
     transform: translateY(-5px);
 }
 

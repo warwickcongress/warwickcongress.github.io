@@ -1,54 +1,60 @@
-// // Conferences swiper
-// var swiper = new Swiper(".team-swiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 25,
-//     loop: true,
-//     centerSlide: 'true',
-//     fade: 'true',
-    // grabCursor: 'true',
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//       dynamicBullets: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
+// About swiper
+const aboutSwiper = new Swiper('.about-swiper', {
+    
+    direction: 'horizontal',
+    grabCursor: 'true',
+    spaceBetween: 25,
+    slidesPerView: 5,
+    
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+  
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-//     breakpoints:{
-//         0: {
-//             slidesPerView: 1,
-//         },
-//         520: {
-//             slidesPerView: 2,
-//         },
-//         950: {
-//             slidesPerView: 3,
-//         },
-//     },
-//   });
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        500: {
+            slidesPerView: 2
+        },
+        700: {
+            slidesPerView: 3
+        },
+        900: {
+            slidesPerView: 4
+        },
+        1100: {
+            slidesPerView: 5
+        }
+    }
+  
+});
 
 // Conferences swiper
 const confSwiper = new Swiper('.conf-swiper', {
     
     direction: 'horizontal',
-    loop: true,
   
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
         type: "progressbar",
+        clickable: true,
     },
   
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
 });
 
 
+// Team swiper
 const teamSwiper = new Swiper('.team-swiper', {
     
     direction: 'horizontal',
@@ -56,20 +62,11 @@ const teamSwiper = new Swiper('.team-swiper', {
     grabCursor: 'true',
     spaceBetween: 25,
     slidesPerView: 4,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    //   },
   
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
         dynamicBullets: true,
-    },
-  
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        clickable: true,
     },
 
     breakpoints: {
