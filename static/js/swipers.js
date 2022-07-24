@@ -3,7 +3,7 @@ const aboutSwiper = new Swiper('.about-swiper', {
     
     direction: 'horizontal',
     grabCursor: 'true',
-    spaceBetween: 25,
+    spaceBetween: 20,
     slidesPerView: 5,
     
     autoplay: {
@@ -20,16 +20,16 @@ const aboutSwiper = new Swiper('.about-swiper', {
         0: {
             slidesPerView: 1
         },
-        500: {
+        600: {
             slidesPerView: 2
         },
-        700: {
+        800: {
             slidesPerView: 3
         },
-        900: {
+        1000: {
             slidesPerView: 4
         },
-        1100: {
+        1200: {
             slidesPerView: 5
         }
     }

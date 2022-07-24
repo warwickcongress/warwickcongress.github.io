@@ -169,11 +169,11 @@
 /* About section */
 
 #about .swiper {
-    padding-top: 60px;
+    padding-top: 90px;
 }
 
 #about .about-icon i {
-    font-size: 10vh;
+    font-size: 12vh;
     color: var(--warcon-purple);
     text-shadow: 1px 1px 5px #888888;
 }
@@ -181,8 +181,8 @@
 #about .about-description {
     height: 70%;
     width: 100%;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 #about .about-description p {
@@ -200,7 +200,7 @@
 }
 
 #conferences .swiper-slide .content {
-    padding: 80px;
+    padding: 200px;
 }
 
 
@@ -251,8 +251,8 @@
 }
 
 #team .swiper-slide .content .img {
-    height: 190px;
-    width: 190px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 14px;
     padding: 3px;
     background: var(--dark-grey);
