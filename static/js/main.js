@@ -1,6 +1,18 @@
 var navLinks = document.querySelectorAll('.nav-link');
 var navDropdown = document.querySelector('#nav-dropdown');
 
+// Show/hide navigation dropdown menu on click
+for (i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+        if (navDropdown.style.maxHeight) {
+            navDropdown.style.maxHeight = null;
+        } else {
+            navDropdown.style.maxHeight = navDropdown.scrollHeight + 'px';
+        }
+    });
+}
+
+
 // Change styling of logo, nav menu and copyright on scroll
 document.querySelector('.container').addEventListener('scroll', function() {
 
@@ -44,14 +56,3 @@ document.querySelector('.container').addEventListener('scroll', function() {
         copyright.classList.add('hidden');
     }
 });
-
-// Show/hide nav menu
-for (i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', function() {
-        if (navDropdown.style.maxHeight) {
-            navDropdown.style.maxHeight = null;
-        } else {
-            navDropdown.style.maxHeight = navDropdown.scrollHeight + 'px';
-        }
-    });
-}
