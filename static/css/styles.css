@@ -363,6 +363,10 @@
     transform: translateY(-5px);
 }
 
+#contact p {
+    font-weight: 300;
+}
+
 
 /* Text */
 
@@ -430,7 +434,7 @@ h4 {
 @media only screen and (max-width: 768px) {
     
     .nav-link {
-        margin-right: 10px;
+        margin-right: 0;
     }
 
     #conferences .swiper-button-prev {
