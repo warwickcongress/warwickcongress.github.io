@@ -33,7 +33,6 @@ const aboutSwiper = new Swiper('.about-swiper', {
             slidesPerView: 5
         }
     }
-  
 });
 
 // Conferences swiper

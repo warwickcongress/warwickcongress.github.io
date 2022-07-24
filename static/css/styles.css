@@ -89,6 +89,12 @@
     background: var(--warcon-purple);
 }
 
+@media only screen and (max-width: 768px) {
+    .nav-link {
+        margin-right: 10px;
+    }
+
+}
 
 /* Swipers */
 
@@ -270,10 +276,13 @@
 #team .swiper-slide .name {
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 2px;
 }
 
 #team .swiper-slide .role {
     font-size: 1rem;
+    font-weight: 400;
+    padding: 0 10px;
 }
 
 #team .swiper-slide .media-icons {
@@ -336,7 +345,7 @@
 
 #contact .page-content {
     height: 55%;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 #contact li {
@@ -360,7 +369,6 @@
     transform: translateY(-5px);
 }
 
-
 #contact #copyright {
     color: var(--dark-grey);
     position: absolute;
@@ -368,6 +376,8 @@
     bottom: 0.5vh;
     left: 0.5vh;
     transition: opacity 0.5s;
+    text-align: center;
+    width: 98%;
 }
 
 
@@ -375,26 +385,17 @@
 
 h1 {
     font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 15px;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-
 h2 {
-    color: var(--dark-grey);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 5px;
 }
 
@@ -405,7 +406,7 @@ h4 {
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin-top: 5px;
 }
