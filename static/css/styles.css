@@ -203,6 +203,10 @@
     padding: 120px;
 }
 
+#conferences .swiper-slide p {
+    font-weight: 400;
+}
+
 
 /* Team section */
 
@@ -340,6 +344,10 @@
 #contact .page-content {
     height: 55%;
     padding-top: 30px;
+}
+
+#contact .page-content p {
+    font-weight: 400;
 }
 
 #contact li {
