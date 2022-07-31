@@ -377,6 +377,15 @@
     transform: translateY(-5px);
 }
 
+#contact .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: 400;
+}
+
 
 /* Text */
 
