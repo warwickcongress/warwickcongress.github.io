@@ -207,20 +207,6 @@
     font-weight: 400;
 }
 
-#conferences .swiper-slide .speakers-container {
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#conferences .swiper-slide img {
-    height: 10vw;
-    width: 10vw;
-    border-radius: 50%;
-}
-
 
 /* Team section */
 
@@ -472,9 +458,5 @@ h4 {
 
     #conferences .swiper-slide .content {
         padding: 40px !important
-    }
-
-    #conferences .speakers-container {
-        display: none;
     }
 }
