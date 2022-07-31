@@ -60,17 +60,12 @@ const teamSwiper = new Swiper('.team-swiper', {
     loop: true,
     grabCursor: 'true',
     spaceBetween: 25,
-    slidesPerView: 3,
+    slidesPerView: 4,
   
     pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
         clickable: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {
@@ -84,7 +79,7 @@ const teamSwiper = new Swiper('.team-swiper', {
             slidesPerView: 3
         },
         1400: {
-            slidesPerView: 3
+            slidesPerView: 4
         }
     }
 });

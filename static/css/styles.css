@@ -231,7 +231,7 @@
 }
 
 #team .swiper {
-    padding: 0 100px;
+    padding: 0 50px;
 }
 
 #team .swiper-slide {
@@ -304,12 +304,6 @@
 #team .swiper-slide .media-icons a:hover {
     background: #222;
     transform: translateY(-5px);
-}
-
-#team .swiper .swiper-button-next,
-#team .swiper .swiper-button-prev {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 
