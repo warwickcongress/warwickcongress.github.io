@@ -200,7 +200,7 @@
 }
 
 #conferences .swiper-slide .content {
-    padding: 0 120px;
+    padding: 0 180px;
 }
 
 #conferences .swiper-slide p {
@@ -406,7 +406,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 5px;
 }
