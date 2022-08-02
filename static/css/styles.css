@@ -232,6 +232,7 @@
 
 #team .swiper {
     padding: 0 50px;
+    padding-top: 10px;
 }
 
 #team .swiper-slide {
