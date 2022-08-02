@@ -451,6 +451,10 @@ h4 {
         margin-right: 0;
     }
 
+    /* #conferences .page-content p {
+        font-size: 0.9rem;
+    } */
+
     #conferences .swiper-button-prev {
         margin-left: -10px;
     }
@@ -460,6 +464,6 @@ h4 {
     }
 
     #conferences .swiper-slide .content {
-        padding: 50px !important
+        padding: 40px !important
     }
 }
