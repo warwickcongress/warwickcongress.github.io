@@ -119,6 +119,7 @@
 
 .container {
     height: 100vh;
+    max-height: -webkit-fill-available;
     width: 100vw;
     max-width: 100%;
     scroll-snap-type: y mandatory;
@@ -218,6 +219,7 @@
     content: '';
     position: absolute;
     height: 100vh;
+    max-height: -webkit-fill-available;
     width: 100%;
     background: var(--light-grey);
     clip-path: inset(50% 0 0 0);
