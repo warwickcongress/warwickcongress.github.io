@@ -308,6 +308,13 @@
 }
 
 
+/* Events section */
+
+#events .calendar-container {
+    margin: 30px 60px;
+}
+
+
 /* Contact section */
 
 #contact {
