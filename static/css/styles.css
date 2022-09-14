@@ -313,7 +313,19 @@
 /* Events section */
 
 #events .calendar-container {
-    margin: 30px 60px;
+    margin: 30px 120px;
+}
+
+#events .calendar-container .calendar {
+    margin: 0;
+    width: 100%;
+    height: 65vh;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#events .calendar-agenda {
+    margin: 30px 120px;
 }
 
 
@@ -456,6 +468,18 @@ h4 {
     
     .nav-link {
         margin-right: 0;
+    }
+
+    #events .calendar-container {
+        margin: 30px 60px;
+    }
+
+    #events .calendar-month {
+        display: none;
+    }
+
+    #events .calendar-agenda {
+        display: block;
     }
 
     #conferences .page-content p {
