@@ -471,15 +471,15 @@ h4 {
     }
 
     #events .calendar-container {
-        margin: 30px 60px;
+        margin: 60px 60px;
     }
 
     #events .calendar-month {
-        display: none;
+        display: none !important;
     }
 
     #events .calendar-agenda {
-        display: block;
+        display: block !important;
     }
 
     #conferences .page-content p {
