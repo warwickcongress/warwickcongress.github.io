@@ -117,7 +117,7 @@
 
 /* Sections */
 
-.container {
+.main-content {
     height: 100vh;
     max-height: -webkit-fill-available;
     width: 100vw;
@@ -126,7 +126,7 @@
     overflow-y: scroll;
 }
 
-.container section {
+.main-content section {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -219,7 +219,6 @@
     content: '';
     position: absolute;
     height: 100vh;
-    max-height: -webkit-fill-available;
     width: 100%;
     background: var(--light-grey);
     clip-path: inset(50% 0 0 0);
@@ -239,7 +238,7 @@
 
 #team .swiper-slide {
     background: var(--light-grey);
-    height: 90%;
+    height: 100%;
     padding: 30px;
     border-radius: 15px;
     transition: all 1s ease;
