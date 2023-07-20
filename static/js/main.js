@@ -48,3 +48,23 @@ document.querySelector('.container').addEventListener('scroll', function() {
         document.querySelector("a[href='#contact']").classList.add('active');
     }
 });
+
+// Toggle between viewing student and associate membership info
+$('.team-togglers').on('click', function(event) {
+
+    // Do nothing if selected toggler is already active
+    if ($(event.target).hasClass('active-toggler')) {
+        return;
+    }
+
+    // Hide both swipers initially
+    $('.team-swiper').hide();
+
+    // Show swiper whose id contains the matching exec type
+    var id = (event.target.id).split('-')[0];
+    $(".team-swiper[id^='" + id + "']").show();
+
+    // Change active toggler styling
+    $('.team-togglers').removeClass('active-toggler');
+    $(event.target).addClass('active-toggler');
+});
