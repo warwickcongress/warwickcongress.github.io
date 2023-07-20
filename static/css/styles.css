@@ -226,15 +226,6 @@
     z-index: -1;
 }
 
-#team .team-togglers {
-    font-weight: 300;
-    cursor: pointer;
-}
-
-#team .active-toggler {
-    font-weight: 500;
-}
-
 #team .page-content {
     display: flex;
     align-items: center;
