@@ -33,6 +33,14 @@
     transition: opacity 0.5s;
 }
 
+.logo-big {
+    position: fixed;
+    top: 50;
+    left: 100;
+    margin: 10px;
+    z-index: 100;
+}
+
 #logo-dark {
     position: absolute;
     top: 0;
