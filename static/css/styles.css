@@ -106,11 +106,13 @@
 }
 
 #conferences .swiper-slide,
+#events .swiper-slide,
 #team .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
 .swiper-pagination-bullet-active {
@@ -164,11 +166,12 @@
     align-items: center;
     justify-content: left;
     text-align: left;
-    background-image: url("../img/zigzag.jpg");
+    background-image: url("../img/purple%20background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 #home div {
     padding: 60px;
@@ -254,6 +257,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+
 #team .swiper-slide:hover {
     transform: translateY(-10px);
 }
@@ -320,22 +324,184 @@
 
 /* Events section */
 
-#events .calendar-container {
-    margin: 30px 120px;
+#events {
+    position: relative;
 }
 
-#events .calendar-container .calendar {
-    margin: 0;
+#events::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    max-height: -webkit-fill-available;
     width: 100%;
-    height: 65vh;
-    border: none;
+    background: var(--light-grey);
+    clip-path: inset(50% 0 0 0);
+    z-index: -1;
+}
+
+#events .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#events .swiper {
+    padding: 0 50px;
+    padding-top: 10px;
+}
+
+#events .swiper-slide {
+    background: var(--light-grey);
+    height: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 1s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-#events .calendar-container .calendar-agenda {
-    display: none;
-    height: 50vh;
+#events .swiper-slide:hover {
+    transform: translateY(-10px);
 }
+
+#events .swiper-slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#events .swiper-slide .content .img {
+    height: 170px;
+    width: 300px;
+    margin-bottom: 14px;
+    padding: 3px;
+    background: var(--dark-grey);
+    border-radius: 15%;
+}
+
+#events .swiper-slide .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 3px solid #fff;
+}
+
+#events .swiper-slide .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#events .swiper-slide .role {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+
+
+/* Photos section */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position:relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+    color: #f2f2f2;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
 
 
 /* Contact section */
@@ -479,17 +645,6 @@ h4 {
         margin-right: 0;
     }
 
-    #events .calendar-container {
-        margin: 60px 60px;
-    }
-
-    #events .calendar-month {
-        display: none !important;
-    }
-
-    #events .calendar-agenda {
-        display: block !important;
-    }
 
     #conferences .page-content p {
         font-size: 0.9rem;
