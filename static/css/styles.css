@@ -166,7 +166,7 @@
     align-items: center;
     justify-content: left;
     text-align: left;
-    background-image: url("../img/purple%20background.jpg");
+    background-image: url("../img/zigzag_logo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -348,11 +348,12 @@
 #events .swiper {
     padding: 0 50px;
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 #events .swiper-slide {
     background: var(--light-grey);
-    height: 90%;
+    height: 100%;
     padding: 30px;
     border-radius: 15px;
     transition: all 1s ease;
