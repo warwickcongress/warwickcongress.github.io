@@ -83,3 +83,32 @@ const teamSwiper = new Swiper('.team-swiper', {
         }
     }
 });
+
+// Events swiper
+const eventsSwiper = new Swiper('.events-swiper', {
+    
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: 'true',
+    spaceBetween: 25,
+    slidesPerView: 1,
+  
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+    },
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+    }
+});
+
+
