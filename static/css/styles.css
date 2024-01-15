@@ -369,23 +369,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #events .swiper-slide .content .img {
-    height: 170px;
-    width: 300px;
+    height: 490px;
+    width: 770px;
     margin-bottom: 14px;
     padding: 3px;
-    background: var(--dark-grey);
-    border-radius: 15%;
+    border-radius: 0%;
 }
 
 #events .swiper-slide .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 15%;
-    border: 3px solid #fff;
+    border-radius: 1%;
 }
 
 #events .swiper-slide .name {
