@@ -666,6 +666,10 @@ h4 {
         padding: 45px !important
     }
 
+    #events .subtitle {
+        display: none;
+        /*visibility: hidden;*/
+    }
         
     #events .swiper-slide {
         background: var(--light-grey);
@@ -690,8 +694,8 @@ h4 {
     }
 
     #events .swiper-slide .content .img {
-        height: 200px;
-        width: 500px;
+        height: 100px;
+        width: 250px;
         margin-bottom: 3px;
         padding: 1px;
         border-radius: 0%;
