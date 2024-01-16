@@ -353,7 +353,8 @@
 
 #events .swiper-slide {
     background: var(--light-grey);
-    height: 100%;
+    transform: translateY(10%);
+    height: 90%;
     padding: 30px;
     border-radius: 15px;
     transition: all 1s ease;
@@ -361,7 +362,7 @@
 }
 
 #events .swiper-slide:hover {
-    transform: translateY(-10px);
+    transform: translateY(-1%);
 }
 
 #events .swiper-slide .content {
@@ -374,8 +375,8 @@
 }
 
 #events .swiper-slide .content .img {
-    height: 490px;
-    width: 770px;
+    height: 60%;
+    width: 60%;
     margin-bottom: 14px;
     padding: 3px;
     border-radius: 0%;
