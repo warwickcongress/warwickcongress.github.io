@@ -704,3 +704,79 @@ h4 {
         border-radius: 1%;
     }
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+
+    /* Make images in the events section responsive */
+    .swiper-slide .content .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Increase margin-top for the nav links to give them more space on smaller screens */
+    .nav-link {
+        margin-top: 30px;
+    }
+
+    /* Adjust the position of the logo on smaller screens */
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Adjust the position of the logo on smaller screens */
+    #logo-dark {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Adjust the position of the navigation menu on smaller screens */
+    #nav-menu {
+        margin: 5px;
+    }
+
+    /* Adjust the position of the join banner text on smaller screens */
+    .join-banner-text {
+        margin-top: 20px;
+    }
+
+    /* Style adjustments for the CV Clinic section on smaller screens */
+    #events .page-title,
+    #events .page-content {
+        text-align: center;
+    }
+
+    #events .swiper-slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #events .swiper-slide .content {
+        width: 100%;
+    }
+
+    #events .swiper-slide .content .img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 601px) {
+    /* Adjustments for larger screens */
+
+    /* Ensure only one picture per slide on desktop */
+    #events .swiper-slide .content {
+        width: 100%;
+    }
+
+    #events .swiper-slide .content .img {
+        margin-bottom: 20px;
+    }
+}
+
+/* End of Styles */
+
