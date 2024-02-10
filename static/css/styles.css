@@ -402,6 +402,100 @@
 }
 
 
+/* Newsletters section */
+
+#newsletters {
+    position: relative;
+}
+
+#newsletters::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    width: 100%;
+    background: var(--light-grey);
+    clip-path: inset(50% 0 0 0);
+    z-index: -1;
+}
+
+#newsletters .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletters .swiper {
+    padding: 0 50px;
+    padding-top: 10px;
+}
+
+#newsletters .swiper-slide {
+    background: var(--light-grey);
+    height: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 1s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+#newsletters .swiper-slide:hover {
+    transform: translateY(-10px);
+}
+
+#newsletters .swiper-slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletters .swiper-slide .content .img {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 14px;
+    padding: 3px;
+    background: var(--dark-grey);
+    border-radius: 15%;
+}
+
+#newsletters .swiper-slide .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 3px solid #fff;
+}
+
+#newsletters .swiper-slide .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#newsletters .swiper-slide .download {
+    display: flex;
+    margin-top: 30px;
+}
+
+#newsletters .swiper-slide .download a {
+    width: 80px;
+    font-size: 1rem;
+    background: var(--dark-grey);
+    margin: 0 4px;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 33px;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+#newsletters .swiper-slide .download a:hover {
+    background: #222;
+    transform: translateY(-1px);
+}
+
 
 /* Photos section */
 
@@ -627,8 +721,11 @@ h4 {
 }
 
 .join-btn {
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
-    padding: 5px;
+    margin-right: 10px;
+    padding: 10px;
     width: 80px;
     background: #fff;
     border-radius: 5px;
@@ -641,7 +738,6 @@ h4 {
 .join-btn:hover {
     background: #ccc;
 }
-
 
 /* Mobile layout */
 @media only screen and (max-width: 768px) {
